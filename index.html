@@ -30,9 +30,27 @@
             </div>
         </div>
     </div>
-    <div class="bg- w-full h-full absolute right-0">
-        <div class="h-12 w-12 fixed right-10 top-5 shadow-lg rounded-full transition duration-1000 hover:transition-all hover:w-24 focus:w-24 z-50" style="background-color: #086272;">
-            <button class="absolute left-3 h-full w-16" id="btn-menu">
+    <div class="w-full h-full absolute right-0">
+        <div class="w-16 h-12 absolute right-20 top-5 flex items-center justify-center z-50">
+          <div class="w-1/2 z-50">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bell-fill text-white" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="h-12 w-28 fixed right-10 top-5 shadow-lg rounded-full z-40" style="background-color: rgba(8, 98, 114, 0.656);">
+            <div class="w-10 h-10 absolute right-1 top-1 cursor-pointer" id="btn-menu"><img src="public/img/users/u.jpg" alt="" class="rounded-full"></div>
+        </div>
+        <div class="w-56 h-auto absolute right-16 top-16 rounded-xl shadow-2xl invisible z-50 bg-white border-2 mt-1" id="menu">
+            <div class="h-full flex items-center flex-col">
+                <div class="pt-4">Hola, pablo</div>
+                <div class="mt-3 pb-6 pt-2">
+                    <a class="bg-gray-200 px-4 py-2 rounded-lg cursor-pointer hover:bg-orange-500 hover:text-white transition duration-1000 hover:transition-all">Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="h-12 w-12 fixed right-10 top-5 shadow-lg rounded-full transition duration-1000 hover:transition-all hover:h-24 focus:w-24 z-50" style="background-color: #086272;">
+            <button class="absolute h-16 w-full left-2 bottom-0" id="btn-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list text-white hover:text-orange-500 transition duration-500 hover:transition-all" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                   </svg>
@@ -46,23 +64,24 @@
                     <a class="bg-gray-200 px-4 py-2 rounded-lg cursor-pointer hover:bg-orange-500 hover:text-white transition duration-1000 hover:transition-all">Cerrar sesión</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- body -->
-        <div class="md:ml-40 w-10/12 mt-10">
+        <div class="md:ml-40 w-10/12 mt-8">
           <img src="public/img/madigen-large.png" alt="" srcset="" class="" width="150px">
             <div class="relative rounded-xl overflow-auto mt-10 shadow-lg">
                 <div class="shadow-sm overflow-hidden my-8">
-                  <table class="border-collapse table-auto w-full text-sm">
+                  <table class="border-collapse table-auto w-full text-sm ">
                     <thead>
                       <tr>
-                        <th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Song</th>
-                        <th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Artist</th>
-                        <th class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Year</th>
+                        <th class="border-b font-medium p-4 pl-8 pt-0 pb-3 text-black text-left">Titulo</th>
+                        <th class="border-b font-medium p-4 pt-0 pb-3 text-black text-left">Vistas</th>
+                        <th class="border-b font-medium p-4 pr-8 pt-0 pb-3 text-black text-left">Fecha</th>
+                        <th class="border-b font-medium p-4 pr-8 pt-0 pb-3 text-black text-left">Autor</th>
                       </tr>
                     </thead>
-                    <tbody class="dark:bg-slate-800">
-                      <tr>
+                    <tbody class="dark:bg-orange-300">
+                      <!-- <tr>
                         <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">The Sliding Mr. Bones (Next Stop, Pottersville)</td>
                         <td class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">Malcolm Lockyer</td>
                         <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">1961</td>
@@ -76,7 +95,7 @@
                         <td class="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-500 dark:text-slate-400">Shining Star</td>
                         <td class="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-500 dark:text-slate-400">Earth, Wind, and Fire</td>
                         <td class="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-500 dark:text-slate-400">1975</td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
                 </div>
