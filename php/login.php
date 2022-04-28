@@ -9,7 +9,7 @@ $result = $get->get_result();
 $row = $result->num_rows;
     if($row != 0){
         $data = $result->fetch_assoc();
-        if(password_verify($_p, $data['contraseña'])){
+        if(password_verify($_p, $data['password'])){
             session_start();
             $_SESSION['s'] = [
                 'i' => $data['id']

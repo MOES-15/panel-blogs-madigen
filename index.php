@@ -1,7 +1,7 @@
 
 <?php 
 session_start();
-  if(empty($_SESSION['s']) || !isset($_SESSION['s'])){
+  if(!isset($_SESSION['s'])){
     header('Location: php/session');
   }else{
       include_once('config/conn.php');
@@ -156,6 +156,7 @@ session_start();
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="negocios-guadalajara.com.mx">Negocios Guadalajara</button>
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="tendenciaguadalajara.com.mx">Tendencia Guadalajara</button>
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="gdl-news.com.mx">Gdl News</button>
+                  <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="fesaragon.com/dev_1/blog/">FES Aragón</button>
                 </div>
             </div>
           </div>
@@ -285,6 +286,7 @@ session_start();
                   <option value="https://www.negocios-guadalajara.com.mx/234142/addPost.php">Negocios Guadalajara</option>
                   <option value="https://www.tendenciaguadalajara.com.mx/234142/addPost.php">Tendencia Guadalajara</option>
                   <option value="https://www.gdl-news.com.mx/234142/addPost.php">Tendencia Guadalajara</option>
+                  <option value="https://www.fesaragon.com/dev_1/blog/234142/addPost.php">FES Aragón</option>
               </select>
               </div>
             </div>

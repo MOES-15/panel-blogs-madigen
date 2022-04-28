@@ -13,13 +13,13 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <link href="public/css/panel.min.css" rel="stylesheet">
     <title>Inicio de sesión | Madigen</title>
 </head>
-<body class="w-screen h-screen grid grid-cols-6" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; ">
+<body class="w-screen h-screen grid grid-cols-6 relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; ">
     <div class="md:col-span-3 col-span-6 md:h-full saturate-200 relative">
         <div class="relative md:top-80 top-5 md:w-full w-1/2 m-auto z-30 mt-14">
             <img src="public/img/2.png" alt="" srcset="" class="m-auto" width="400px">
         </div>
     </div>
-    <div class="md:col-span-3 col-span-6 h-80 md:w-7/12 w-11/12 m-auto shadow-lg z-50 bg-white flex rounded-lg md:mb-auto mb-20">
+    <div class="md:static  absolute md:col-span-3 col-span-6 h-80 md:w-7/12 w-11/12 m-auto shadow-lg z-50 bg-white flex rounded-lg sm:mb-auto bottom-28 left-0 right-0">
         <div class="w-full flex justify-center align-center flex-col">
             <div class="flex justify-center mb-3">
                 <input type="email" name="" id="email" placeholder="CORREO ELECTRÓNICO" class="w-10/12 rounded-md focus:outline-none py-4 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-center text-1xl">
@@ -39,8 +39,8 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
                 </button>
             </div>
         </div>
-        <div class="absolute right-10 top-5 w-72 h-14 bg-red-500 z-50 rounded-xl flex items-center px-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red"></div>
-  <div class="absolute right-10 top-5 w-72 h-14 bg-green-500 z-50 rounded-xl flex items-center px-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success"></div>
+        <div class="absolute right-10 top-5 bg-red-500 z-50 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red"></div>
+  <div class="absolute right-10 top-5 bg-green-500 z-50 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success"></div>
     </div>
     <div class="w-full h-full z-10 absolute" style="background: rgba(0, 0, 0, 0.5); background-size: cover;"></div>
     <div class="fixed bottom-3 right-5 z-50 text-white">
