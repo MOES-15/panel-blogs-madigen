@@ -1,6 +1,6 @@
 <?php 
 session_start();
-  if(!isset($_SESSION['s'])){
+  if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
     header('Location: php/session');
   }else{
       include_once('config/conn.php');
