@@ -89,7 +89,7 @@ session_start();
           </div>
         </div>
         <div class="h-12 w-28 md:fixed absolute md:right-10 right-5 top-5 bottom-10 shadow-lg rounded-full z-30" style="background-color: rgba(8, 98, 114, 0.656);">
-            <div class="w-10 h-10 absolute right-1 top-1 cursor-pointer" id="btn-menu"><img src="public/img/users/u.jpg" alt="" class="rounded-full"></div>
+            <div class="w-10 h-10 absolute right-1 top-1 cursor-pointer" id="btn-menu"><img src="public/img/users/madigen.jpeg" alt="" class="rounded-full"></div>
         </div>
         <div class="w-56 h-auto md:fixed absolute md:right-16 right-5 top-16 rounded-xl shadow-2xl invisible z-50 bg-white mt-1" id="menu">
             <div class="h-full flex items-center flex-col">
@@ -155,7 +155,7 @@ session_start();
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="negocios-guadalajara.com.mx">Negocios Guadalajara</button>
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="tendenciaguadalajara.com.mx">Tendencia Guadalajara</button>
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="gdl-news.com.mx">Gdl News</button>
-                  <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="fesaragon.com/dev_1/blog/">FES Aragón</button>
+                  <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="fesaragon.com/blog/">FES Aragón</button>
                 </div>
             </div>
           </div>
@@ -186,7 +186,7 @@ session_start();
             </div>
             <div class="grid grid-cols-5 col-span-5 px-3">
               <div class="md:col-span-3 col-span-5">
-                <textarea name="small" placeholder="Descripción corta*" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl"></textarea>
+                <textarea name="small" placeholder="Descripción corta*" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl" maxlength="155"></textarea>
               </div>
               <div class="grid grid-cols-5 md:col-span-2 col-span-5">
                 <div class="col-span-5 md:pt-0 pt-3">
@@ -280,12 +280,12 @@ session_start();
               <div class="md:col-span-2 col-span-6 md:pt-0 pt-3">
                 <select name="blog" class="appearance-none w-11/12 py-4 px-6 bg-white rounded-md text-sm text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-center text-1xl">
                   <option selected>Selecciona el blog*</option>
-                  <option value="https://www.vidaguadalajara.com.mx/234142/addPost.php">Vida Guadalajara</option>
-                  <option value="https://www.country-news.com.mx/234142/addPost.php">Country News</option>
-                  <option value="https://www.negocios-guadalajara.com.mx/234142/addPost.php">Negocios Guadalajara</option>
-                  <option value="https://www.tendenciaguadalajara.com.mx/234142/addPost.php">Tendencia Guadalajara</option>
-                  <option value="https://www.gdl-news.com.mx/234142/addPost.php">Tendencia Guadalajara</option>
-                  <option value="https://www.fesaragon.com/dev_1/blog/234142/addPost.php">FES Aragón</option>
+                  <option value="https://www.vidaguadalajara.com.mx/234142/addPost.php" blog="https://www.vidaguadalajara.com.mx/">Vida Guadalajara</option>
+                  <option value="https://www.country-news.com.mx/234142/addPost.php" blog="https://www.country-news.com.mx/">Country News</option>
+                  <option value="https://www.negocios-guadalajara.com.mx/234142/addPost.php" blog="https://www.negocios-guadalajara.com.mx/">Negocios Guadalajara</option>
+                  <option value="https://www.tendenciaguadalajara.com.mx/234142/addPost.php" blog="https://www.tendenciaguadalajara.com.mx/">Tendencia Guadalajara</option>
+                  <option value="https://www.gdl-news.com.mx/234142/addPost.php" blog="https://www.gdl-news.com.mx/">Gdl News</option>
+                  <option value="https://www.fesaragon.com/blog/234142/addPost.php" blog="https://www.fesaragon.com/blog/">FES Aragón</option>
               </select>
               </div>
             </div>
@@ -295,11 +295,22 @@ session_start();
           </form>
           <div class="h-full w-full flex items-center justify-center flex-col hidden" space="success-post">
             <div class="font-bold text-4xl mb-14">Publicación creada con exito</div>
-            <button id="new_post" style="background-color: #086272;" class="w-56 inline-flex items-center justify-center px-6 py-4 h-14 text-white rounded-lg text-1xl shadow-lg hover:shadow-none transition duration-500">
-                 <div class="w-full text-center">
-                    CREAR UNA NUEVO
-                 </div>
-           </button>
+              <div class="flex">
+                <div class="px-3">
+                  <button id="new_post" class="w-56 inline-flex items-center justify-center px-6 py-4 h-14 text-white rounded-lg text-1xl shadow-lg hover:shadow-none transition duration-500 bg-orange-400">
+                      <div class="w-full text-center">
+                          CREAR UNO NUEVO
+                      </div>
+                  </button>
+                </div>
+                <div class="px-3">
+                  <a id="link_post" href="" class="w-56 inline-flex items-center justify-center px-6 py-4 h-14 text-white rounded-lg text-1xl shadow-lg hover:shadow-none transition duration-500 bg-green-500">
+                        <div class="w-full text-center">
+                           VER PUBLICACIÓN
+                        </div>
+                  </a>
+                </div>
+            </div>
           </div>
           <footer class="flex justify-center items-center w-full absolute bottom-0 h-24 bg-white rounded-b-xl">
               <!-- <button class="bg-black text" aria-label="close modal" data-close>OK</button> -->
@@ -311,8 +322,8 @@ session_start();
           </footer>
       </div>
   </div>
-  <div class="absolute right-10 top-5 w-72 h-14 bg-red-500 z-50 rounded-xl flex items-center px-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red"></div>
-  <div class="absolute right-10 top-5 w-72 h-14 bg-green-500 z-50 rounded-xl flex items-center px-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success"></div>
+  <div class="absolute right-10 top-5 bg-red-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red" style="z-index: 9999;"></div>
+  <div class="absolute right-10 top-5 bg-green-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success" style="z-index: 9999;"></div>
     <!-- <script>var email = '<?= $id ?>' ;</script> -->
     <script>var email = 'pablo.150520@gmail.com' ;</script>
     <script src="public/js/panel.min.js"></script>
