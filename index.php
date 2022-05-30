@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/css/panel.min.css?version=cdbea40f3ab84cdba491f447271c33ac" rel="stylesheet">
     <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <!-- <script src="public/js/editor.min.js"></script> -->
+    <script src="public/js/editor.min.js"></script>
     <title>Panel Madigen</title>
 </head>
 <body class="w-screen h-screen relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: bottom; background-attachment: fixed;">
