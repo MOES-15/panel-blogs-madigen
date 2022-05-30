@@ -1,14 +1,15 @@
 <?php
 // Conexion a la base de datos
-	/* $server = 'localhost';
-	$database = 'panel_madigen';
-	$username = 'root';
-	$password = ''; 
-	*/
+$server = 'localhost';
+$database = 'panel_madigen';
+$username = 'root';
+$password = ''; 
+/* 
 	$server = 'localhost';
 	$database = 'madigenm_panel_blogs';
 	$username = 'madigenm_blogs';
 	$password = 'aIdRbof#EE*m'; 
+	*/
 
 	$conn = new mysqli($server, $username, $password, $database);
 	if($conn->connect_errno){
