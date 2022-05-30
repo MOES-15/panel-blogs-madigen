@@ -64,7 +64,7 @@ session_start();
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
         </svg>
       </div>
-      <input type="text" name="" id="search-post" placeholder="Busca un post" class="w-full rounded-md focus:outline-none py-2 px-6 bg-transparent placeholder:text-white border-2 border-white hover:border-orange-500 hover:shadow-none transition duration-500 text-center text-1xl">
+      <input type="text" name="" id="search-post" placeholder="Busca un post" class="w-full rounded-md focus:outline-none py-2 px-6 bg-transparent placeholder:text-white border-2 border-white hover:border-orange-500 hover:shadow-none transition duration-500 text-center text-1xl text-white">
     </div>
     <div class="w-full h-full absolute right-0">
       <div class="w-full h-full absolute" style="background: rgba(0, 0, 0, 0.1); background-size: cover;"></div>
