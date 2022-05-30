@@ -278,7 +278,7 @@ session_start();
               </div>
             </div>
             <div class="md:col-span-6 col-span-6 px-3 py-3 md:mt-10 md:mb-20">
-              <textarea name="facebook" id="post-iframe" placeholder="Iframe de Facebook (width: 350)" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl"></textarea>
+              <textarea name="facebook" id="post-iframe" placeholder="Iframe de Facebook - width: 350 (opcional)" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl"></textarea>
             </div>
             <div class="md:col-span-5 col-span-6 px-8 md:mt-20 py-3 mb-20">
               <textarea name="body" id="post-body" placeholder="Cuerpo de la publicación" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl"></textarea>
