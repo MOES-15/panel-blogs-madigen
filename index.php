@@ -1,5 +1,5 @@
 <?php 
-/* session_start();
+session_start();
   if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
     header('Location: php/session');
   }else{
@@ -14,7 +14,7 @@
       }else{
         header('Location: php/session');
       }
-  } */
+  }
 ?>
 <!DOCTYPE html>
 <html lang="es">
