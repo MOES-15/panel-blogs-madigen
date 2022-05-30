@@ -1,5 +1,5 @@
 <?php 
-session_start();
+/* session_start();
   if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
     header('Location: php/session');
   }else{
@@ -14,7 +14,7 @@ session_start();
       }else{
         header('Location: php/session');
       }
-  }
+  } */
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -22,8 +22,9 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/css/panel.min.css" rel="stylesheet">
-    <script src="public/js/editor.min.js"></script>
+    <link href="public/css/panel.min.css?version=cdbea40f3ab84cdba491f447271c33ac" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- <script src="public/js/editor.min.js"></script> -->
     <script>
       tinymce.init({
     selector: '#post-body',
@@ -123,8 +124,9 @@ session_start();
               <!--  Header -->
               <div class="md:fixed absolute md:w-10/12 w-96 h-20 bg-white z-30 rounded-t-xl">
                 <div class="md:grid md:grid-cols-7 flex px-5 h-full my-auto items-center text-lg">
-                  <div class="md:col-span-3 md:w-auto w-96 px-5">Titulo</div>
+                  <div class="md:col-span-2 md:w-auto w-96 px-5">Titulo</div>
                   <div class="md:col-span-1 md:w-auto w-96 px-5 text-center">Vistas</div>
+                  <div class="md:col-span-1 md:w-auto w-96 px-5">Categorias</div>
                   <div class="md:col-span-1 md:w-auto w-96 px-5">Fecha</div>
                   <div class="md:col-span-1 md:w-auto w-96 px-5">Autor</div>
                   <div class="md:col-span-1 w-auto">
@@ -173,8 +175,8 @@ session_start();
               <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
             </svg>
           </button>
-          <form enctype="multipart/form-data" id="fupForm" space="post" class="md:px-20 text-center mb-14 md:mt-28 mt-20 h-screen overflow-y-auto grid grid-cols-5 md:grid-rows-5 md:pt-10 pt-5 gap-5" name="form">
-            <div class="grid grid-cols-5 col-span-5 px-3">
+          <form enctype="multipart/form-data" id="fupForm" space="post" class="md:px-20 text-center mb-14 md:mt-28 mt-20 h-screen overflow-y-auto grid grid-cols-5 md:grid-rows-6 md:pt-10 gap-y-5 " name="form">
+            <div class="grid grid-cols-5 col-span-5 px-3 py-3">
               <div class="md:col-span-3 col-span-5">
                 <input type="text" name="title" id="" placeholder="Titulo*" class="w-11/12 rounded-md focus:outline-none py-4 px-6 placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-1xl">
               </div>
@@ -184,7 +186,7 @@ session_start();
                 </label>
               </div>
             </div>
-            <div class="grid grid-cols-5 col-span-5 px-3">
+            <div class="grid grid-cols-5 col-span-5 px-3 py-3">
               <div class="md:col-span-3 col-span-5">
                 <textarea name="small" placeholder="Descripción corta*" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl" maxlength="155"></textarea>
               </div>
@@ -269,15 +271,15 @@ session_start();
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-6 col-span-5 px-3 md:mt-8 mt-3">
-              <div class="md:col-span-2 col-span-6 md:px-1">
+            <div class="grid grid-cols-6 col-span-5 px-3 py-3 md:mt-10">
+              <div class="md:col-span-2 col-span-6 md:px-1 py-3 md:py-0">
                 <input type="text" name="youtube" id="" placeholder="Video de youtube embed (opcional)" class="w-11/12 rounded-md focus:outline-none py-4 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-1xl">
               </div>
-              <div class="md:col-span-2 col-span-6 md:pt-0 pt-3">
+              <div class="md:col-span-2 col-span-6 md:px-1 py-3 md:py-0">
                 <input type="text" name="twitter" id="" placeholder="Perfil de twitter (opcional)" class="w-11/12 rounded-md focus:outline-none py-4 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-1xl">
               </div>
               <input type="hidden" name="autor" value="<?php echo $data['name'];?>" placeholder="Perfil de twitter (opcional)" class="w-11/12 rounded-md focus:outline-none py-4 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-1xl">
-              <div class="md:col-span-2 col-span-6 md:pt-0 pt-3">
+              <div class="md:col-span-2 col-span-6 md:px-1 py-3 md:py-0">
                 <select name="blog" class="appearance-none w-11/12 py-4 px-6 bg-white rounded-md text-sm text-gray-400 border-2 border-gray-100 hover:border-orange-500 hover:shadow-none transition duration-500 text-center text-1xl">
                   <option selected>Selecciona el blog*</option>
                   <option value="https://www.vidaguadalajara.com.mx/234142/addPost.php" blog="https://www.vidaguadalajara.com.mx/">Vida Guadalajara</option>
@@ -289,7 +291,10 @@ session_start();
               </select>
               </div>
             </div>
-            <div class="md:col-span-5 col-span-6 px-8 mt-10 mb-20">
+            <div class="md:col-span-6 col-span-6 px-3 py-3 md:mt-10 md:mb-20">
+              <textarea name="facebook" id="post-iframe" placeholder="Iframe de Facebook (width: 350)" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl"></textarea>
+            </div>
+            <div class="md:col-span-5 col-span-6 px-8 md:mt-20 py-3 mb-20">
               <textarea name="body" id="post-body" placeholder="Cuerpo de la publicación" class="w-11/12 rounded-md focus:outline-none py-4 h-24 px-6 bg-transparent placeholder:text-gray-400 border-2 border-gray-100 hover:border-orange-500 transition duration-500 text-1xl"></textarea>
             </div>
           </form>
@@ -304,7 +309,7 @@ session_start();
                   </button>
                 </div>
                 <div class="px-3">
-                  <a id="link_post" href="" class="w-56 inline-flex items-center justify-center px-6 py-4 h-14 text-white rounded-lg text-1xl shadow-lg hover:shadow-none transition duration-500 bg-green-500">
+                  <a id="link_post" href="" target="_blank" class="w-56 inline-flex items-center justify-center px-6 py-4 h-14 text-white rounded-lg text-1xl shadow-lg hover:shadow-none transition duration-500 bg-green-500">
                         <div class="w-full text-center">
                            VER PUBLICACIÓN
                         </div>
@@ -324,8 +329,6 @@ session_start();
   </div>
   <div class="absolute right-10 top-5 bg-red-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red" style="z-index: 9999;"></div>
   <div class="absolute right-10 top-5 bg-green-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success" style="z-index: 9999;"></div>
-    <!-- <script>var email = '<?= $id ?>' ;</script> -->
-    <script>var email = 'pablo.150520@gmail.com' ;</script>
-    <script src="public/js/panel.min.js"></script>
+    <script src="public/js/panel.min.js?version=cdbea40f3ab84cdba491f447271c33ac"></script>
 </body>
 </html>

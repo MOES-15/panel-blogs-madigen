@@ -3,7 +3,8 @@
 	/* $server = 'localhost';
 	$database = 'panel_madigen';
 	$username = 'root';
-	$password = ''; */
+	$password = ''; 
+	*/
 	$server = 'localhost';
 	$database = 'madigenm_panel_blogs';
 	$username = 'madigenm_blogs';
