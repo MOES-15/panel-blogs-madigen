@@ -10,7 +10,7 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/css/panel.min.css" rel="stylesheet">
+    <link href="public/css/panel.min.css?v=cdbea40f3ab84cdba491f447271c33ac" rel="stylesheet">
     <title>Inicio de sesión | Madigen</title>
 </head>
 <body class="w-screen h-screen grid grid-cols-6 relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; ">
@@ -44,6 +44,6 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <div class="fixed bottom-3 right-5 z-50 text-white">
         Copyright 2022&copy;
       </div>
-    <script src="public/js/login.min.js"></script>
+    <script src="public/js/login.min.js?v=cdbea40f3ab84cdba491f447271c33ac"></script>
 </body>
 </html>

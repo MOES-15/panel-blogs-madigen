@@ -22,9 +22,9 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/css/panel.min.css?version=cdbea40f3ab84cdba491f447271c33ac" rel="stylesheet">
+    <link href="public/css/panel.min.css?version=cdbea40f3ab84cdba491f44727sc33ac" rel="stylesheet">
     <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-    <script src="public/js/editor.min.js"></script>
+    <script src="public/js/editor.min.js?v=cdbea40f3ab84cdba491f447271c33ac"></script>
     <title>Panel Madigen</title>
 </head>
 <body class="w-screen h-screen relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: bottom; background-attachment: fixed;">
@@ -315,7 +315,7 @@ session_start();
   </div>
   <div class="absolute right-10 top-5 bg-red-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red" style="z-index: 9999;"></div>
   <div class="absolute right-10 top-5 bg-green-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success" style="z-index: 9999;"></div>
-    <script src="public/js/panel.min.js?version=cdbea40f3ab84cdba491f447271c33ac"></script>
+    <script src="public/js/panel.min.js?version=cdbea40f3ab84c8ba491f447271c33ac"></script>
     <script>
       tinymce.init({
     selector: '#post-body',
