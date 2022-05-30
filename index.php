@@ -23,22 +23,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/css/panel.min.css?version=cdbea40f3ab84cdba491f447271c33ac" rel="stylesheet">
-    <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <!-- <script src="public/js/editor.min.js"></script> -->
-    <script>
-      tinymce.init({
-    selector: '#post-body',
-    height: 500,
-    plugins: [
-      'a11ychecker', 'advcode', 'advlist', 'anchor', 'autolink', 'codesample', 'fullscreen', 'help',
-      'image', 'editimage', 'tinydrive', 'lists', 'link', 'media', 'powerpaste', 'preview',
-      'searchreplace', 'table', 'template', 'tinymcespellchecker', 'visualblocks', 'wordcount'
-    ],
-    toolbar: 'insertfile a11ycheck undo redo | bold italic | forecolor backcolor | template codesample | alignleft aligncenter alignright alignjustify | bullist numlist | link image',
-    theme: 'silver',
-    language: 'es_MX'
-  });
-    </script>
     <title>Panel Madigen</title>
 </head>
 <body class="w-screen h-screen relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: bottom; background-attachment: fixed;">
@@ -330,5 +316,20 @@
   <div class="absolute right-10 top-5 bg-red-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-red" style="z-index: 9999;"></div>
   <div class="absolute right-10 top-5 bg-green-500 rounded-xl flex items-center px-5 py-5 shadow-lg text-white transition-all duration-500 invisible text-sm" id="alert-success" style="z-index: 9999;"></div>
     <script src="public/js/panel.min.js?version=cdbea40f3ab84cdba491f447271c33ac"></script>
+    <script>
+      tinymce.init({
+    selector: '#post-body',
+    height: 500,
+    plugins: [
+      'a11ychecker', 'advcode', 'advlist', 'anchor', 'autolink', 'codesample', 'fullscreen', 'help',
+      'image', 'editimage', 'tinydrive', 'lists', 'link', 'media', 'powerpaste', 'preview',
+      'searchreplace', 'table', 'template', 'tinymcespellchecker', 'visualblocks', 'wordcount'
+    ],
+    toolbar: 'insertfile a11ycheck undo redo | bold italic | forecolor backcolor | template codesample | alignleft aligncenter alignright alignjustify | bullist numlist | link image',
+    theme: 'silver',
+    language: 'es_MX',
+    toolbar_mode: 'floating',
+  });
+    </script>
 </body>
 </html>
