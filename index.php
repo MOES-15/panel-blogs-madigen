@@ -27,7 +27,7 @@ session_start();
     <script src="public/js/editor.min.js?v=cdbea40f3ab84cdba491f447271c33ac"></script>
     <title>Panel Madigen</title>
 </head>
-<body class="w-screen h-screen relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: bottom; background-attachment: fixed;">
+<body class="w-screen h-screen relative" style="background: url(public/img/back-city.jpg); background-size: cover; background-position: bottom; background-attachment: fixed;">
     <div class="h-full bg-white shadow-lg md:w-24 w-full fixed left-0 z-50 md:flex flex-col hidden">
         <div class="relative h-full m-auto z-30">
           <div class="absolute right-1 top-5 md:hidden">

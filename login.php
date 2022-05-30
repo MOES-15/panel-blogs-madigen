@@ -13,7 +13,7 @@ if(isset($_SESSION['s']) || isset($_SESSION['s']['i'])){
     <link href="public/css/panel.min.css?v=cdbea40f3ab84cdba491f447271c33ac" rel="stylesheet">
     <title>Inicio de sesión | Madigen</title>
 </head>
-<body class="w-screen h-screen grid grid-cols-6 relative" style="background: url(public/img/back-2.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; ">
+<body class="w-screen h-screen grid grid-cols-6 relative" style="background: url(public/img/back-city.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; ">
     <div class="md:col-span-3 col-span-6 md:h-full saturate-200 relative">
         <div class="relative md:top-80 top-5 md:w-full w-1/2 m-auto z-30 mt-14">
             <img src="public/img/2.png" alt="" srcset="" class="m-auto" width="400px">
