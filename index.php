@@ -23,7 +23,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="public/css/panel.min.css?version=cdbea40f3ab84cdba491f44727sc33ac" rel="stylesheet">
-    <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/4aapsc5attw72i48qvy8n000mdbo2m6ioslnpe83vto5qd38/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="public/js/editor.min.js?v=cdbea40f3ab84cdba491f447271c33ac"></script>
     <title>Panel Madigen</title>
 </head>
