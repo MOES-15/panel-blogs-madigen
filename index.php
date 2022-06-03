@@ -1,9 +1,9 @@
 <?php 
 session_start();
-  if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
+include_once('config/conn.php');
+  /* if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
     header('Location: php/session');
   }else{
-      include_once('config/conn.php');
       $get = $conn->prepare("SELECT * FROM users WHERE id=?");
       $get->bind_param('s', $_SESSION['s']['i']);
       $get->execute();
@@ -14,7 +14,7 @@ session_start();
       }else{
         header('Location: php/session');
       }
-  }
+  } */
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -144,6 +144,7 @@ session_start();
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="tendenciaguadalajara.com.mx">Tendencia Guadalajara</button>
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="gdl-news.com.mx">Gdl News</button>
                   <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="fesaragon.com/blog/">FES Aragón</button>
+                  <button class="mt-1 border-b-8 hover:border-orange-400 border-white md:px-0 px-5 pb-3 whitespace-nowrap" btn="blogs" blog="highcbdd.com/admin/">High CBD</button>
                 </div>
             </div>
           </div>
@@ -274,6 +275,7 @@ session_start();
                   <option value="https://www.tendenciaguadalajara.com.mx/234142/addPost.php" blog="https://www.tendenciaguadalajara.com.mx/">Tendencia Guadalajara</option>
                   <option value="https://www.gdl-news.com.mx/234142/addPost.php" blog="https://www.gdl-news.com.mx/">Gdl News</option>
                   <option value="https://www.fesaragon.com/blog/234142/addPost.php" blog="https://www.fesaragon.com/blog/">FES Aragón</option>
+                  <option value="https://www.highcbdd.com/admin/234142/addPost.php" blog="https://www.highcbdd.com/admin/">FES Aragón</option>
               </select>
               </div>
             </div>
