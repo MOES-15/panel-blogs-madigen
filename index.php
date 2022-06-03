@@ -1,9 +1,9 @@
 <?php 
 session_start();
-include_once('config/conn.php');
-  /* if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
-    header('Location: php/session');
-  }else{
+if(!isset($_SESSION['s']) || empty($_SESSION['s'])){
+  header('Location: php/session');
+}else{
+    include_once('config/conn.php');
       $get = $conn->prepare("SELECT * FROM users WHERE id=?");
       $get->bind_param('s', $_SESSION['s']['i']);
       $get->execute();
@@ -14,7 +14,7 @@ include_once('config/conn.php');
       }else{
         header('Location: php/session');
       }
-  } */
+  }
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -275,7 +275,7 @@ include_once('config/conn.php');
                   <option value="https://www.tendenciaguadalajara.com.mx/234142/addPost.php" blog="https://www.tendenciaguadalajara.com.mx/">Tendencia Guadalajara</option>
                   <option value="https://www.gdl-news.com.mx/234142/addPost.php" blog="https://www.gdl-news.com.mx/">Gdl News</option>
                   <option value="https://www.fesaragon.com/blog/234142/addPost.php" blog="https://www.fesaragon.com/blog/">FES Aragón</option>
-                  <option value="https://www.highcbdd.com/admin/234142/addPost.php" blog="https://www.highcbdd.com/admin/">FES Aragón</option>
+                  <option value="https://www.highcbdd.com/admin/234142/addPost.php" blog="https://www.highcbdd.com/admin/">High CBD</option>
               </select>
               </div>
             </div>
